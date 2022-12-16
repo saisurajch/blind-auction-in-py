@@ -11,10 +11,12 @@ while (satisfied == True):
   bidding_log[name] = bid_amount
   bidders = input("Are there any other bidders? Type 'yes' or 'no'.")
   if(bidders == 'yes'):
-    clear()
+    os.system('cls')
+    # for windows we use 'cls', if os is linux or Mac we use 'clear'
     satisfied = True
   else:
-    clear()
+    os.system('cls')
+    # for windows we use 'cls', if os is linux or Mac we use 'clear'
     satisfied = False
     max = 0
     winner = ''
